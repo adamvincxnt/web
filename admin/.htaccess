@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /admin/
+# Default to dashboard
+RewriteRule ^$ dashboard.php [L]
+# Map clean URLs
+RewriteRule ^login/?$ login.php [L]
+RewriteRule ^logout/?$ logout.php [L]
+RewriteRule ^dashboard/?$ dashboard.php [L]
+RewriteRule ^orders/?$ orders.php [L]
+RewriteRule ^products/?$ products.php [L]
+RewriteRule ^settings/?$ settings.php [L]
